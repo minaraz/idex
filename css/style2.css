@@ -1,0 +1,856 @@
+
+/*-- Homepage --*/
+body,
+.home-container {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, serif;
+  font-size: 16px;
+  position: absolute;
+  color: #ffffff;
+  background: url("../media/background.jpg")no-repeat 50%/cover;
+  }
+
+  #home {display:none;}
+
+  #menu {display:none;}
+
+  #about-us {display:block;}
+
+  #services {display:none;}
+
+  #pics-gallery {display: none;}
+
+  #contact {display:none;}
+
+  #footer {display:none;}
+
+
+/*-- Header --*/
+
+
+ .header {
+  background-color: #c1b3af;
+  width:100%;
+  height: 70px;
+  flex:1 0 0;
+  border-bottom: 7px solid #fff;
+  position: relative;
+}
+
+.logo {
+  background-image: url('../media/idex.png');
+  margin:5px;
+  float: left;
+  width: 150px;
+  height: 58px;
+  position: relative;
+}
+.header-slogan {
+  margin-top: 40px;
+  margin-left: 44px;
+  float: left;
+  font-family: helvetica, sans-serif;
+  font-size: 12px;
+  color: #5f5757;
+}
+
+.email {
+  display:inline-block;
+  float: right;
+  font-family: helvetica;
+  font-weight: 100;
+  margin-top: 20px;
+  margin-left: auto;
+  letter-spacing: .06em;
+}
+
+.email a{
+  color: #4c4c4c;
+  display: block;
+  float: left;body
+  margin: 5px;
+  padding: 5px 30px 5px 0px;
+  text-decoration: none;
+}
+
+.email a:visited {
+  color:#4c4c4c;
+}
+
+.email a:hover {
+  color: #ffffff;
+}
+
+.email .env{
+  margin-right: 7px;
+  width: 21px;
+  height: 12px;
+  float: left;
+  margin-top: 7px;
+}
+.email .env:visited {
+  color:#4c4c4c;}
+
+  .email .env:hover {
+  color: #ffffff;
+  }
+
+
+            /*---------- Home Page Container -------------*/
+
+.home-container .button-menu {
+  background: url("../media/arrow_up.png");
+  position: absolute;
+  padding: 0;
+  margin: 0 auto;
+  /*margin-top: -10%; /-- Ask why it still not working for smaller screens?--*/
+  left: 50%;
+  top: 5%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+.home-container .button-contact {
+    background: url("../media/arrow_down.png");
+    position: absolute; /*--changing position "title-position" reletive to absolute and caused these stuff!*/
+    padding: 0;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: opacity 0.5s;
+    opacity: 1;
+}
+
+.home-container .button-services{
+  background: url("../media/arrow_right.png");
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  margin-top: -33px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+.home-container .button-about-us {
+  background: url("../media/arrow_left.png");
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  margin-top: -33px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+.home-container p{
+  font-family: helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  color: #fff;
+  position: relative;
+}
+
+.button-menu p{
+  margin:0 auto;
+  top: 25px;
+  margin-left: -5px;
+}
+
+.button-contact p{
+  margin:0;
+  margin-left: -12px;
+  bottom: 25px;
+}
+
+.button-about-us p{
+  margin: 0;
+  top: 0;
+  left: 25px;
+}
+
+.button-services p{
+  margin: 0;
+  top: 0;
+  right: 70px;
+}
+
+   /*-------- Design_Quote /in Main Page ------------*/
+.home-container .home-title {
+    font-family: 'Merriweather', serif;
+    position:absolute;
+    top:50%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color:white;
+    font-size:1em;
+    font-weight: lighter;
+}
+
+.home-title h1{
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  color: #fff;
+  line-height:1px;
+}
+
+.home-title span {
+  font-family: 'Merriweather', serif;
+  font-size:1.6em;
+  font-weight: 300;
+  color: #fff;
+}
+
+/*-----------------------------Menu Page-------------------------------------*/
+
+.menu_container{
+  background: url("../media/background.jpg")no-repeat 50%/cover;
+  height:100%;
+  width:100%;
+  position: absolute;
+  padding-left: -5%;
+}
+
+.menu_container nav{
+  height:100%;
+  width:100%;
+  background: #252b32 100%/cover;
+  opacity: 0.97;
+  padding: 2% 0;
+  border: none;
+  top: 0;
+  margin: 0 auto;
+  position: absolute;
+  display:block;
+}
+.head-menu{
+  border-bottom: solid 1px #fff;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+  height: 10%;
+}
+.menu_container h2{
+  font-family: "Merriweather", serif;
+  font-size: 1.4em;
+  color: #fff;
+  margin-left: 2%; /****-----ask what the problem-----****/
+  top: 0;
+  margin-bottom: 0;
+  position: absolute;
+
+}
+
+.menu_container .close{
+  background: url("../media/close.png")no-repeat 50%/cover;
+  height:20px;
+  width:20px;
+  position: absolute;
+  margin-left: 90%;
+  border: none;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+.menu_container .close:hover{
+  background: url("../media/close_active.png")no-repeat 50%/cover;
+  height:20px;
+  width:20px;
+  margin-left: 90%;
+  border: none;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+#menu section a.heading {
+  border-bottom:1px solid white;
+  padding-bottom:10px;
+  max-width: 90%;
+}
+
+#menu section {
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 30px;
+  max-width: 350px;
+  width: 280px;
+  height: 100%;
+  float: left;
+  margin-left: 30px;
+  list-style: none;
+  position: relative;
+  }
+
+#menu section a {
+    display: block;
+    margin: 0 5%;
+    padding: 15px 0;
+    color: #fff;
+    text-align: left;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: 'Merriweather', serif;
+    font-size: 1.1em;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2 ease-in-out;
+    opacity:.8
+    }
+
+#menu section a:hover {
+    color: #fff;
+    opacity:1;
+    cursor: pointer;
+    pointer-events: auto;
+  }
+
+#menu .social{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  float: right;
+  position: relative;
+  margin-top: 10px;
+
+}
+#menu .facebook{
+  height: 22px;
+  width: 22px;
+  padding: 0;
+  background: url("../media/fb.png") no-repeat 50%/cover;
+  display: inline-block;
+}
+#menu .linkedin{
+  height: 23px;
+  width: 23px;
+  padding: 0;
+  background: url("../media/ln.png") no-repeat 50%/cover;
+  display: inline-block;
+}
+
+#menu .twitter{
+  height: 22px;
+  width: 22px;
+  padding: 0;
+  background: url("../media/tw.png") no-repeat 50%/cover;
+  display: inline-block;
+}
+
+
+
+/*-------------------------------- about-us page -----------------------------*/
+/*-- for about-us body text:  --*/
+
+.about_container{
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  position: absolute;
+  max-width: 100%;
+}
+
+.side-menu {
+  background-color: #ffffff;
+  margin-top: 5%;
+  margin-right: 2%;
+  width:15%;
+  float:left;
+  padding-left: 2%;
+  padding-right: 2%;
+  line-height: 200%;
+}
+
+.article {
+  background-color: #ffffff;
+  margin-top: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  width:60%;
+  float:left;
+  border-left: solid 1px #3e454d;
+}
+
+.about_container h2 {
+  font-weight: 300;
+  color: #5f5757;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-left: 5%;
+  margin-top: 20px;
+}
+
+.about_container .side-menu a{
+  margin: 0 5%;
+  margin-left: 30px;
+  font-weight: 100;
+  display: inline-block;
+  color: #5f5757;
+  font-size: 1.1em;
+  text-align: left;
+  text-decoration: none;
+  letter-spacing: 1.2px;
+  font-family: 'Merriweather', serif;
+  line-height: 2em;
+  -webkit-transition: .1s ease-in-out;
+  -moz-transition: .1s ease-in-out;
+  -o-transition: .1s ease-in-out;
+  transition: .1 ease-in-out;
+  opacity:.8
+}
+
+.about_container .side-menu a:hover{
+    color: #252b32;
+    font-weight: bold;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1 ease-in-out;
+    opacity:.9
+}
+.about_container .side-menu a::selection{
+  font-weight: bold;
+   color: #3e454d;
+}
+.about_container .article p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #252b32;
+  font-size: 1.1em;
+  letter-spacing: .1em;
+  line-height: 170%;
+  text-align: left;
+}
+
+ .back-about{
+   background: url("../media/back_right.png")no-repeat 50%/cover;;
+   position: absolute;
+   top: 50%;
+   right: 40px;
+   margin-top: -33px;
+   margin-right: 2%;
+   margin-left: 2%;
+   width: 30px;
+   height: 30px;
+   border: none;
+   cursor: pointer;
+   pointer-events: auto;
+   transition: opacity 0.5s;
+   opacity: 1;
+ }
+ .back-about:hover{
+   background: url("../media/back_right_h.png")no-repeat 50%/cover;
+   color: #252b32;
+   display: block;
+   -webkit-transition: .1s ease-in-out;
+   -moz-transition: .1s ease-in-out;
+   -o-transition: .1s ease-in-out;
+   transition: .1 ease-in-out;
+   opacity:.9
+ }
+
+ .back-about p{
+   margin: 0;
+   top: 0;
+   right: 20px;
+   margin-left: 25px;
+   color: #5f5757;
+   font-size: 1.3em;
+   text-decoration: none;
+ }
+
+.back-about p:hover{
+  color: #252b32;
+  -webkit-transition: .1s ease-in-out;
+  -moz-transition: .1s ease-in-out;
+  -o-transition: .1s ease-in-out;
+  transition: .1 ease-in-out;
+  opacity:.9
+}
+
+
+    /*-------------------- Services Page  -----------------------------------*/
+
+#services .services_container{
+  height: 100%;
+  width: 100%;
+  background: url("../media/background.jpg")no-repeat 50%/cover;
+  margin: 0;
+  font-family: Helvetica, serif;
+  position: relative;
+  max-width: 100%;
+  padding: 0;
+}
+/*----------------!!!!!Problem solving back home!!!!!!-----------*/
+#services .services_container #back-services .back a{
+  position: relative;
+  display: block;
+  top: 0;
+  left: 20px;
+  margin-top: -33px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+#back-services .back .icon{
+   background: url("../media/arrow_left.png") no-repeat 50%/cover;
+   height: 25px;
+   width: 25px;
+   display: block;
+}
+
+.gallery{
+   height: 90%;
+   width: 80%;
+   background-color: rgba(214,205,205,0.3);
+   margin: 0;
+   top:50%;
+   font-family: 'Merriweather', serif;
+   position: fixed;
+   text-align: center;
+   left: 50%;
+   transform: translateX(-50%) translateY(-50%);
+   color:white;
+   font-size:1em;
+   border: solid 5px #ccb9b1;
+
+}
+
+.button-about-us p{
+  margin: 0;
+  top: 0;
+  left: 25px;
+}
+
+.head{
+  height: 35px;
+  width: 100%;
+  background-color: #52565c;
+  margin:0;
+}
+
+.head h3 {
+margin-top:7px;
+text-align:left;
+padding-left:10px;
+letter-spacing: .1em;
+font-family: 'Merriweather', serif;
+font-weight: 100;
+font-size: 1em;
+color: #ffffff;
+padding-bottom: 2px;
+line-height: 2;
+}
+
+
+.head h3:hover {
+margin-top:7px;
+font-weight: normal;
+font-family: 'Merriweather', serif;
+font-weight: 300;
+color: #ffffff;
+}
+
+.head:hover{
+  background-color: #3e454d;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.first, .second, .third{
+  height: 33%;
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.sd, .bv {
+    display: inline-flex;
+    margin:20px;
+    height: 100%;
+    top: 50px;
+    padding: 0;
+    border-color: #b8adae;
+}
+
+ .sd{
+    background: url("../media/service.jpg") no-repeat 50%/cover;
+    width: 58%;
+    margin: 0;
+}
+
+ .bv{
+    width: 40%;
+    margin: 2px;
+}
+
+ .tt, .ed{
+    display: inline-flex;
+    height: 35%;
+    top:0;
+    padding: 0;
+    border: 2px;
+    border-color: #b8adae;
+}
+
+  .tt{
+    width: 40%;
+    margin: 2px;
+}
+
+  .ed{
+    width: 57%;
+    margin: 2px;
+    }
+
+  .rh, .sp{
+    display: inline-flex;
+    height: 35%;
+    top:0;
+    padding: 0;
+    border: 2px;
+    border-color: #b8adae;
+    }
+
+  .rh{
+    width: 47%;
+    margin: 2px;
+    }
+
+  .sp{
+    width: 51%;
+    margin: 2px;
+    }
+
+
+/*---------------------- Services Gallery Page_inside --------------------------*/
+/*-----------------------work till here--------------------*/
+ #pics-gallery section {
+     width: 100%;
+     height: 100%;
+     margin: 0 auto;
+     padding: 10px;
+     display: block;
+ }
+
+ .one {
+     width: 25%;
+     height: 500px;
+     background: #dfd9d8;
+     float: left;
+ }
+
+ .two {
+     margin-left: 15%;
+     height: 500px;
+     background: rgba(214,205,205,0.7);
+ }
+
+ .one .content h2{
+   font-family: 'Roboto', serif;
+   font-weight: 300;
+   padding-left: 20px;
+   font-size: 1.2em;
+
+ }
+ .one .content p{
+  height: 80%;
+  width: 80%;
+  font-family: 'Roboto', serif;
+  font-weight: 300;
+  padding: 20px;
+  margin: 5px;
+  line-height: 1.6em;
+  letter-spacing: .1em;
+  text-align: left;
+
+}
+
+ #pics-gallery .projects .head{
+    height: 35px;
+    width: 100%;
+    background-color: #52565c;
+    margin:0;
+    position: relative;
+    line-height: 2px;
+    }
+
+
+
+    /****---------------------  Contact Us Page -------------------------*****/
+
+
+
+
+
+    /****--------------------------  Footer  -----------------------------*****/
+.footer-nav{
+  margin-top:600px;
+  margin-bottom: 0;
+  height: 40px;
+  width: 100%;
+  max-width:1200px;
+  background-color: #5e737f;
+  position: absolute;
+  padding: 4%;
+
+}
+.copyright{
+  width: 30% auto;
+  display: inline-block;
+  position: relative;
+}
+.copyright a{
+  font-size: 1.2em;
+  font-weight: lighter;
+  color: #252b32;
+}
+.copyright a:hover{
+  font-size: 1.2em;
+  font-weight: lighter;
+  color: #ffffff;
+  -webkit-transition: .1s ease-in-out;
+  -moz-transition: .1s ease-in-out;
+  -o-transition: .1s ease-in-out;
+  transition: .1 ease-in-out;
+  opacity:.6
+}
+
+.pages-links{
+  width: 30% auto;
+  float: left;
+  position: relative;
+  display: inline-block;
+}
+
+.pages-links a{
+  color: #252b32;
+  font-size: 1em;
+  font-weight: lighter;
+  border-right: 1px solid #252b32;
+  padding: 0 4%;
+  display: inline;
+  text-decoration: none;
+
+}
+.pages-links a:hover{
+  color: #ffffff;
+  -webkit-transition: .1s ease-in-out;
+  -moz-transition: .1s ease-in-out;
+  -o-transition: .1s ease-in-out;
+  transition: .1 ease-in-out;
+  opacity:.9
+}
+.follow{
+  width: 30% auto;
+  float: right;
+
+}
+
+.follow .facebook{
+  height: 22px;
+  width: 22px;
+  padding-right: 4px;
+  background: url("../media/fb.png") no-repeat 50%/cover;
+  display: inline-block;
+}
+.follow .linkedin{
+  height: 23px;
+  width: 23px;
+  padding-right: 4px;
+  background: url("../media/ln.png") no-repeat 50%/cover;
+  display: inline-block;
+}
+
+.follow .twitter{
+  height: 22px;
+  width: 22px;
+  padding-right: 4px;
+  background: url("../media/tw.png") no-repeat 50%/cover;
+  display: inline-block;
+}
+
+
+
+.Shown{
+  display: none;
+}
+
+
+/*----Media Queries----*/
+/*---width smaller than 1000px*/
+@media screen and (min-width: 1000px){
+h1{
+  font-size: 1.1em;
+}
+a{
+  font-size: 1em;
+
+}
+  }
+}
+
+
+
+
+/*Half of 1280px*/
+@media only screen and (min-width: 640px) {
+  .home-container {
+    position: relative;
+    height: auto;
+    height: 100%;
+    max-height: 90vh;
+    min-height: 360px;
+    background-position: 50% 100%;
+  }
+  .home-container:before {
+    /* Make an element a certain aspect ratio */
+    content: "";
+    width: 100%;
+    padding-top: 56.25%;
+
+  }
+
+  /*iPad : 768*/
+  @media only screen and (max-width: 768px){
+
+  }
+
+
+  /*iPhone : */
+  @media only screen and (max-width: )
