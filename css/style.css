@@ -13,6 +13,7 @@ body,html,
   background: url("../media/background.jpg")no-repeat 50%/cover;
   }
 
+/*cf codes*
   #home,
   #menu,
   #about-us,
@@ -32,8 +33,47 @@ body,html,
     opacity:1 !important;
     transition: opacity 0.2s, visibility 0.2s !important;
   }
-
-
+/*working on my different pages*/
+  #home{
+    display:block;
+    position: relative;
+    top:0;
+    }
+  #menu{
+    display:block;
+    position: relative;
+    top:0;
+    }
+  #about-us{
+    display:block;
+    position: relative;
+    top:0;
+  }
+  #mobile-menu{
+    top:0;
+    display:block;
+    position: relative;
+  }
+  #services{
+    display:block;
+    position: relative;
+    top:0;
+  }
+  #pics-gallery{
+    display:block;
+    position: relative;
+    top:0;
+  }
+  #contact{
+    display:block;
+    position: relative;
+    bottom: :0;
+    }
+  #footer{
+    display:block;
+    position: relative;
+    top:0;
+  }
 
 /*-- Header --*/
 
@@ -911,11 +951,11 @@ color: #ffffff;
 }
 
 .copyright{
-  width: 400px;
+  width: 33%;
   height: 50px;
   display: inline-block;
+  flex-wrap: wrap;
   float: left;
-  padding-left: 7%;
   margin-top:25px;
 }
 
@@ -940,24 +980,25 @@ color: #ffffff;
 }
 
 .pages-links{
-  width: 550px;
+  width: 50%;
   height: 10px;
-  float: right;
-  position: absolute;
-  display: inline-block;
+  position: relative;
+  display: inline-flex;
   padding: 0;
-  left:42%;
   margin-top:25px;
 }
 
 .pages-links a{
+  width: 20%;
   color: #ffffff;
   font-size: 1em;
   font-weight: lighter;
   border-right: 1px solid #ffffff;
-  padding: 0 4%;
-  display: inline;
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 3px;
   text-decoration: none;
+  letter-spacing: .1em;
 }
 
 .pages-links a:hover{
@@ -969,20 +1010,18 @@ color: #ffffff;
   opacity:1;
 }
 .pages-links a::after{
-  border-right: 1px solid #fff;
+  border-right: 1px solid #5e737f;
 }
 
 .follow{
-  width: 100px;
+  width: 20%;
   height: 34px;
-  right:100px;
   position: relative;
+  flex-wrap: wrap;
   float: right;
-  margin: -14px;
   padding: 4px;
   margin-top:15px;
 }
-
 
 .follow .facebook{
   height: 22px;
@@ -1016,13 +1055,8 @@ background: url("../media/ln_h.png")no-repeat 50%/cover;
   background: url("../media/tw_h.png")no-repeat 50%/cover;
 }
 
-.Shown{
-  display: none;
-}
-
 #mobile-menu {
   display:none;
-
 }
 
 /*RESPONSIVE*/
@@ -1093,6 +1127,8 @@ background: url("../media/ln_h.png")no-repeat 50%/cover;
   #services{
 
   }
+  /*Services Gallery*/
+
 
   /*Contact*/
   #contact .contact-container, .add {
@@ -1213,6 +1249,29 @@ background: url("../media/ln_h.png")no-repeat 50%/cover;
 
   .add p{
     width:80%;
+  }
+
+    /*About*/
+  .side-menu{
+    width: 30%;
+    line-height: 50px;
+    padding-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /*Services*/
+
+  /*Services Gallery*/
+
+
+  /*Contact*/
+
+/*Footer*/
+
+  #footer{
+    height: 150px;
+
   }
 
 
