@@ -831,6 +831,34 @@ body,html,
      position: relative;
  }
 
+ #pics-gallery button{
+   background: url("../media/close.png")no-repeat 50%/cover;
+   height:20px;
+   width:20px;
+   position: absolute;
+   margin-top: 5px;
+   margin-left: 95%;
+   border: none;
+   cursor: pointer;
+   pointer-events: auto;
+   transition: opacity 0.5s;
+   opacity: 1;
+
+ }
+ #pics-gallery button:hover{
+   background: url("../media/close_active.png")no-repeat 50%/cover;
+   height:20px;
+   width:20px;
+   border: none;
+   cursor: pointer;
+   pointer-events: auto;
+   -webkit-transition: .2s ease-in-out;
+   -moz-transition: .2s ease-in-out;
+   -o-transition: .2s ease-in-out;
+   transition: .2 ease-in-out;
+   opacity:.8;
+ }
+
  .one {
      width: 25%;
      height: 500px;
@@ -840,12 +868,19 @@ body,html,
      float: left;
      display: inline-block;
  }
+ .one .content{
+   width: 95%;
+   height: 95%;
+   position: relative;
+   display: inline-block;
+   margin: 0 auto;
+ }
+
   .img-cont{
      width: 1260px;
      height: 500px;
      margin: 5px;
      padding: 0;
-
   }
 
  .img-cont .pix{
@@ -857,15 +892,14 @@ body,html,
 
  .img-cont .pix .first,.second{
     width: 44%;
-    height: 49%;
+    height: 48%;
     margin-left: -33%;
     float: left;
     display: inline-flex;
     margin: 0;
-    margin-top: 3px;
+    margin-top: 5px;
     margin-left: 9px;
     position: relative;
-    border: 3px solid #d6cdcd;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -873,6 +907,7 @@ body,html,
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .img-cont .pix .first{
   background: url("../media/ex-1.jpg")no-repeat 50%/cover;
   top:0;
@@ -887,7 +922,7 @@ body,html,
    float: left;
    display: inline-flex;
    text-align: center;
-   margin-top: 3px;
+   margin-top: 10px;
  }
 
  .img-cont .third{
@@ -896,10 +931,9 @@ body,html,
    height: 490px;
    float: right;
    position: relative;
-   margin: 2px;
-   margin-top: 3px;
+   margin: 0;
+   margin-top: -39.2%;
    padding-top: 2px;
-   border: 3px solid #d6cdcd;
    display: inline-flex;
    text-align: center;
    box-sizing: border-box;
@@ -934,7 +968,7 @@ body,html,
 }
 
  #pics-gallery .head {
-    height: 34.5px;
+    height: 35px;
     width: 100%;
     background-color: #52565c;
     margin:0;
@@ -1214,6 +1248,7 @@ body,html,
     display:none;
   }
 
+
 /*RESPONSIVE*/
 
 /*-------Tablet:iPad----------*/
@@ -1223,7 +1258,6 @@ body,html,
     height: 1024px;
   }
 
-
   /*---Homepage----*/
 
   .home-container p{
@@ -1231,7 +1265,7 @@ body,html,
   }
 
   .home-container .home-title{
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   /*-----Menu------*/
@@ -1248,8 +1282,8 @@ body,html,
   margin-left: 0;
   padding: 0;
   float:left;
-
   }
+
   .menu_container section a{
     margin: 0 2%;
   }
@@ -1258,20 +1292,18 @@ body,html,
     font-size: 0.5em;
   }
 
-  /*About*/
+  /*---About---*/
 
   #about-us{
-
   }
+
   .side-menu{
     width: 22%;
     line-height: 50px;
     padding-right: 0;
     line-height: 4.0em;
     font-size: 1em;
-
   }
-
 
   #about-us .back-about{
     display: none;
@@ -1280,7 +1312,7 @@ body,html,
     float:right;
   }
 
-  /*Services*/
+  /*---Services---*/
 
    .services_container .gallery{
    width: 700px;
@@ -1290,8 +1322,8 @@ body,html,
 
   .head{
     height: 80px;
-
   }
+
   .head h3 {
     font-size: 1.1em;
     line-height: 3;
@@ -1303,11 +1335,12 @@ body,html,
   display: none;
 }
 
-  /*Services Gallery*/
+  /*---Services Gallery---*/
 
   .one {
     height: 1000px;
   }
+
   .img-cont{
     height: 1000px;
     background: url("../media/ex-438.jpg")no-repeat 50%/cover;
@@ -1315,7 +1348,7 @@ body,html,
 
 
 
-  /*Contact*/
+  /*---Contact---*/
   #contact .contact-container, .add {
   	width:50%;
     position: relative;
@@ -1330,8 +1363,8 @@ body,html,
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     display: inline-block;
-
   }
+
   #contact .contact-container{
     margin: 0;
     padding: 0;
@@ -1352,6 +1385,7 @@ body,html,
     width: 100%;
     text-align: left;
   }
+
   .pages-links a{
      width: 100%;
      height: 25px;

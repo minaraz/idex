@@ -25,6 +25,8 @@ aboutButton.onclick = function() {
   aboutPage.class.add('selected')
 };
 
+
+
 // this will hide the menu//
 var hideMenu = function() {
   menu.classList.remove('selected');
