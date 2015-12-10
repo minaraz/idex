@@ -1189,8 +1189,11 @@ background: url("../media/ln_h.png")no-repeat 50%/cover;
     text-align:center;
   }
 
-  #header .email {
-    display:none;
+.email {
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);    display:block;
+    float:none;
   }
 
   #header .logo {
@@ -1205,10 +1208,10 @@ background: url("../media/ln_h.png")no-repeat 50%/cover;
   #mobile-menu {
     display:block;
     width:100%;
-    height:250px;
+    height:300px;
     z-index:2000;
     position:absolute;
-    top:60%;
+    top:50%;
     right:0;
     font-family: 'Merriweather', serif;
     font-weight: 300;
@@ -1228,8 +1231,8 @@ background: url("../media/ln_h.png")no-repeat 50%/cover;
     letter-spacing: .1em;
     color: #ffffff;
     position: relative;
-    margin: 5px;
-  }
+    margin: 0;
+    margin-bottom: 10px;  }
 
   .mobile-follow{
     width: 100%;
@@ -1238,20 +1241,43 @@ background: url("../media/ln_h.png")no-repeat 50%/cover;
     position: absolute;
     display: block;
     padding: 0;
-    left:42%;
+    left: 38%;
     margin-top:25px;
   }
+
   .mobile-fb{
+    background: url("../media/fb_h.png") no-repeat 50%/cover;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+  }
+  .mobile-fb:hover{
     background: url("../media/fb.png") no-repeat 50%/cover;
   }
 
   .mobile-tw{
+    background: url("../media/tw_h.png")no-repeat 50%/cover;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+  }
+  .mobile-tw:hover{
     background: url("../media/tw.png")no-repeat 50%/cover;
   }
 
   .mobile-li{
+    background: url("../media/ln_h.png") no-repeat 50%/cover;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+  }
+  .mobile-li:hover{
     background: url("../media/ln.png") no-repeat 50%/cover;
   }
+
 
   .add p{
     width:80%;
