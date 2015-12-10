@@ -55,12 +55,12 @@ body,html,
     position: relative;
   }
   #services{
-    display:block;
+    display:none;
     position: relative;
     top:0;
   }
   #pics-gallery{
-    display:none;
+    display:block;
     position: relative;
     top:0;
   }
@@ -826,7 +826,8 @@ body,html,
      height: 100%;
      margin: 0 auto;
      padding: 10px;
-     display: block;
+     display: inline-block;
+     position: relative;
  }
 
  .one {
@@ -861,6 +862,8 @@ body,html,
   line-height: 1.6em;
   letter-spacing: .1em;
   text-align: left;
+  position: relative;
+  display: inline-block;
 }
 
  #pics-gallery .head {
@@ -994,7 +997,7 @@ body,html,
       width:100%;
       margin-top:645px;
       position:absolute;
-      display: inline-flex;
+      display: none;
     }
 
   .footer-nav{
@@ -1212,7 +1215,6 @@ body,html,
 
   /*Services*/
 
-
    .services_container .gallery{
    width: 700px;
    height: 900px;
@@ -1234,10 +1236,8 @@ body,html,
   display: none;
 }
 
-
-
-
   /*Services Gallery*/
+
 
 
   /*Contact*/
