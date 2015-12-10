@@ -6,8 +6,6 @@ var menu = document.getElementById('menu');
 var homePage = document.getElementById('home');
 var aboutButton = document.getElementById('aboutButton');
 var servicesButton = document.getElementById('servicesButton');
-
-
 var about-us = document.getElementById('about-us');
 menuButton.onclick = function() {
   homePage.classList.remove('selected');
