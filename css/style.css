@@ -682,6 +682,7 @@ body,html,
   line-height: 1.1;
   }
 
+
   .first, .second, .third{
     height: 33%;
     width: 100%;
@@ -978,7 +979,6 @@ body,html,
     background: url(../media/map.png)no-repeat 50%/cover;
     width: 340px;
     height: 222px;
-
   }
 
   .add p{
@@ -995,33 +995,34 @@ body,html,
       margin-top:645px;
       position:absolute;
       display: inline-flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
     }
 
   .footer-nav{
     height: 80px;
-    width: 33%;
+    width: 100%;
     background-color: #5e737f;
-    margin: 0;
+    margin: 0 auto;
     display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    text-align: center;
   }
 
   .copyright{
-    width: 37%;
+    width: 50%;
     height: 50px;
-    display: inline-block;
-    flex-wrap: wrap;
-    float: left;
-    margin-top:25px;
+    display: inline-flex;
+    margin-right: 3%;
+    margin-left: 42%;
+    line-height: 5;
+
   }
 
   .copyright a{
     font-size: 1em;
     font-weight: lighter;
     letter-spacing: .03em;
+    flex-wrap: wrap;
+    float: right;
+    justify-content: space-between;
     color: #ffffff;
     opacity:1;
     text-decoration: none;
@@ -1039,34 +1040,33 @@ body,html,
   }
 
   .pages-links{
-    width: 40%;
+    width: 30%;
     height: 30px;
-    position: relative;
+    position: absolute;
     display: inline-flex;
-    padding: 0;
     margin-top:25px;
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    float: left;
+    margin: 30px;
+    margin-left: 3px;
+
   }
 
   .pages-links a{
-    width: 20%;
+    width: 30%;
     color: #ffffff;
     font-size: 1em;
     font-weight: lighter;
     border-right: 1px solid #ffffff;
-    display: inline-flex;
-    flex-wrap: wrap;
-    padding: 3px;
     text-decoration: none;
     letter-spacing: .1em;
+    justify-content: space-around;
+    padding-right: 10px;
+    padding-left: 15px;
   }
 
   .pages-links a:hover{
-    color: #252b32;
-    font-weight: 300;
-    letter-spacing: .12em;
+    color: #2b3037;
+    font-weight: 400;
     -webkit-transition: .2s ease-in-out;
     -moz-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
@@ -1078,22 +1078,23 @@ body,html,
     border-right: 1px solid #5e737f;
   }
 
-  .follow{
-    width: 15%;
+  #footer .follow{
+    width: 25%;
     height: 30px;
     position: relative;
     flex-wrap: wrap;
     float: right;
     padding: 0;
     margin-top: 25px;
+    margin-right: 5px;
   }
 
   .follow .facebook{
-    height: 22px;
-    width: 22px;
+    height: 23px;
+    width: 23px;
     background: url("../media/fb.png") no-repeat 50%/cover;
-    display: inline-block;
-    margin-right: 8px;
+    display: inline-flex;
+    margin-right: 10px;
   }
 
   .follow .facebook:hover{
@@ -1110,7 +1111,7 @@ body,html,
     width: 23px;
     background: url("../media/ln.png") no-repeat 50%/cover;
     display: inline-block;
-    margin-right: 8px;
+    margin-right: 10px;
   }
 
   .follow .linkedin:hover{
@@ -1123,10 +1124,11 @@ body,html,
   }
 
   .follow .twitter{
-    height: 22px;
-    width: 22px;
+    height: 23px;
+    width: 23px;
     background: url("../media/tw.png") no-repeat 50%/cover;
     display: inline-block;
+    margin-right: 10px;
   }
 
   .follow .twitter:hover{
@@ -1210,10 +1212,31 @@ body,html,
 
   /*Services*/
 
-  #services{
 
+   .services_container .gallery{
+   width: 700px;
+   height: 900px;
+   margin-top: 60%;
+  }
+
+  .head{
+    height: 80px;
 
   }
+  .head h3 {
+    font-size: 1.1em;
+    line-height: 3;
+    margin-left: 2px;
+    letter-spacing: .12;
+  }
+
+.back-services{
+  display: none;
+}
+
+
+
+
   /*Services Gallery*/
 
 
@@ -1243,6 +1266,50 @@ body,html,
     transform: translateX(-50%) translateY(-50%);
     position: absolute;
   }
+
+  #footer{
+    margin-top:1000px;
+    height: 130px;
+    font-size: 1.1em;
+  }
+
+  .footer-nav{
+    width: 100%;
+    text-align: left;
+  }
+  .pages-links a{
+     width: 100%;
+     height: 25px;
+     display: inline-flex;
+     float: left;
+     font-size: 1.1em;
+     padding: 0;
+     padding-left: 20px;
+     padding-right: 20px;
+     margin-top: 5px;
+     margin-left: 7px;
+  }
+
+  .copyright{
+    width: 100%;
+    bottom: 0;
+    float: left;
+    margin-left: 20%;
+    margin-right: 0;
+    margin-top: 40px;
+  }
+
+  #footer .follow{
+    height: 50px;
+    width: 300px;
+    position: relative;
+    margin-top: 34px;
+    margin-right: 5%;
+    margin-left: 0;
+  }
+
+
+
 }
 
 
