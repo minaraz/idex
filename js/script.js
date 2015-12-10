@@ -3,10 +3,14 @@
 //this will show the menu//
 var menuButton = document.getElementById('menuButton');
 var menu = document.getElementById('menu');
+var homePage = document.getElementById('home');
 menuButton.onclick = function() {
-  menu.style.display = 'block';
+  homePage.classList.remove('selected');
+  menu.classList.add('selected');
 };
 // this will hide the menu//
 var hideMenu = function() {
-  menu.style.display = 'none';
+  menu.classList.remove('selected');
+  homePage.classList.add('selected');
+
 }

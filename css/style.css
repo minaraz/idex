@@ -13,20 +13,25 @@ body,html,
   background: url("../media/background.jpg")no-repeat 50%/cover;
   }
 
-  #home {display:none;}
+  #home,
+  #menu,
+  #about-us,
+  #services,
+  #pics-gallery,
+  #contact,
+  #footer {
+    visibility:hidden;
+    opacity: 0;
+    top: 77px;
+    position: absolute;
+    transition: opacity 0.2s, visibility 0.2s;
+  }
 
-  #menu {display:none;}
-
-  #about-us {display:block;}
-
-  #services {display:block;}
-
-  #pics-gallery {display: block;}
-
-  #contact {display:block;}
-
-  #footer {display:block;}
-
+  .selected {
+    visibility:visible !important;
+    opacity:1 !important;
+    transition: opacity 0.2s, visibility 0.2s !important;
+  }
 
 /*-- Header --*/
 
@@ -1209,51 +1214,5 @@ background: url("../media/ln_h.png")no-repeat 50%/cover;
   }
 
 
-
-}
-
-
-/*----temperary view----*/
-  #home {
-    display:block;
-    position:relative;
-    top:0;
-  }
-
-  #menu {
-  display:block;
-  position:relative;
-  top:0;
-  }
-
-  #about-us {
-    display:block;
-    position:relative;
-    top:0;
-  }
-
-  #services {
-    display:block;
-    position:relative;
-    top:0;
-  }
-
-  #pics-gallery {
-    display:block;
-    position:relative;
-    top:0;
-  }
-
-  #contact {
-    display:block;
-    position:relative;
-    top:0;
-  }
-
-  #footer {
-    display:block;
-    position:relative;
-    top:0;
-  }
 
 }
