@@ -822,10 +822,11 @@ body,html,
 /*---------------------- Services Gallery Page_inside --------------------------*/
 
  #pics-gallery section {
+     background: rgba(214,205,205,0.7);
      width: 100%;
      height: 100%;
      margin: 0 auto;
-     padding: 10px;
+     padding: 0;
      display: inline-block;
      position: relative;
  }
@@ -835,12 +836,71 @@ body,html,
      height: 500px;
      background: #dfd9d8;
      float: left;
+     display: inline-block;
+ }
+  .img-cont{
+     width: 1260px;
+     height: 500px;
+
+  }
+
+ .img-cont .pix{
+     width: 46%;
+     height: 500px;
+     padding: 0;
+     position: relative;
  }
 
- .two {
-     margin-left: 15%;
-     height: 500px;
-     background: rgba(214,205,205,0.7);
+ .img-cont .pix .first,.second{
+    width: 44%;
+    height: 49%;
+    margin-left: -33%;
+    float: left;
+    display: inline-flex;
+    margin: 2px;
+    margin-top: 3px;
+    position: relative;
+    border: 3px solid #d6cdcd;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.img-cont .pix .first{
+  background: url("../media/ex-1.jpg")no-repeat 50%/cover;
+  top:0;
+  float: left;
+  display: inline-flex;
+  text-align: center;
+}
+
+.img-cont .pix .second{
+   background: url("../media/ex-2.jpg")no-repeat 50%/cover;
+   bottom: 0;
+   float: left;
+   display: inline-flex;
+   text-align: center;
+ }
+
+ .img-cont .third{
+   background: url("../media/ex-3.jpg")no-repeat 50%/cover;
+   width:53%;
+   height: 100%;
+   float: right;
+   position: relative;
+   margin: 2px;
+   padding: 2px 0;
+   border: 3px solid #d6cdcd;
+   display: inline-flex;
+   text-align: center;
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   display: inline-flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
  }
 
  .one .content h2{
@@ -1237,6 +1297,14 @@ body,html,
 }
 
   /*Services Gallery*/
+
+  .one {
+    height: 1000px;
+  }
+  .img-cont{
+    height: 1000px;
+    background: url("../media/ex-438.jpg")no-repeat 50%/cover;
+  }
 
 
 
