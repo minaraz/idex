@@ -45,7 +45,7 @@ body,html,
     top:0;
     }
   #about-us{
-    display:block;
+    display:none;
     position: relative;
     top:0;
   }
@@ -70,7 +70,7 @@ body,html,
     bottom: :0;
     }
   #footer{
-    display:none;
+    display:block;
     position: relative;
     top:0;
   }
@@ -1100,7 +1100,7 @@ body,html,
       width:100%;
       margin-top:645px;
       position:absolute;
-      display: none;
+      display: block;
     }
 
   .footer-nav{
@@ -1185,13 +1185,13 @@ body,html,
   }
 
   #footer .follow{
-    width: 25%;
+    width: 15%;
     height: 30px;
     position: relative;
     flex-wrap: wrap;
     float: right;
     padding: 0;
-    margin-top: 25px;
+    margin: -24px;
     margin-right: 5px;
   }
 
@@ -1200,7 +1200,7 @@ body,html,
     width: 23px;
     background: url("../images/fb.png") no-repeat 50%/cover;
     display: inline-flex;
-    margin-right: 10px;
+    margin-right: 25px;
   }
 
   .follow .facebook:hover{
@@ -1209,7 +1209,7 @@ body,html,
     -moz-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
     transition: .2 ease-in-out;
-    opacity:.8;
+    opacity:.7;
   }
 
   .follow .linkedin{
@@ -1217,7 +1217,7 @@ body,html,
     width: 23px;
     background: url("../images/ln.png") no-repeat 50%/cover;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 25px;
   }
 
   .follow .linkedin:hover{
@@ -1226,7 +1226,7 @@ body,html,
   -moz-transition: .2s ease-in-out;
   -o-transition: .2s ease-in-out;
   transition: .2 ease-in-out;
-  opacity:.8;
+  opacity:.7;
   }
 
   .follow .twitter{
@@ -1234,7 +1234,7 @@ body,html,
     width: 23px;
     background: url("../images/tw.png") no-repeat 50%/cover;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 25px;
   }
 
   .follow .twitter:hover{
@@ -1243,7 +1243,7 @@ body,html,
     -moz-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
     transition: .2 ease-in-out;
-    opacity:.8;
+    opacity:.7;
   }
 
   #mobile-menu {
@@ -1296,8 +1296,7 @@ body,html,
 
   /*---About---*/
 
-  #about-us{
-  }
+  #about-us{}
 
 
   .about_container h2 {
@@ -1498,6 +1497,7 @@ body,html,
     margin-top:1000px;
     height: 130px;
     font-size: 1.1em;
+    position: absolute;
   }
 
   .footer-nav{
@@ -1526,15 +1526,51 @@ body,html,
     margin-right: 0;
     margin-top: 40px;
   }
+  .copyright {
+      width: 100%;
+      height: 50px;
+      display: inline-flex;
+      margin-top: 50px;
+    }
 
   #footer .follow{
-    height: 50px;
+    height: 60px;
     width: 300px;
-    position: relative;
-    margin-top: 34px;
-    margin-right: 5%;
-    margin-left: 0;
+    position: absolute;
+    margin-top: 33px;
+    margin-left: 70%;
+    float: right;
   }
+  .follow .facebook{
+    height: 30px;
+    width: 30px;
+  }
+  .follow .linkedin{
+    height: 30px;
+    width: 30px;
+  }
+  .follow .twitter{
+    height: 30px;
+    width: 30px;
+  }
+
+
+  /*---pages-links for smaller screens*width: 30%;
+    .pages-links {height: 30px;
+    position: absolute;
+    display: inline-flex;
+    float: left;
+    margin-left: 3px;}
+
+    .copyright {
+        width: 50%;
+        height: 50px;
+        display: inline-flex;
+        line-height: 5;
+        margin: 0;
+        position: absolute;}
+
+    ------*/
 
 
 
