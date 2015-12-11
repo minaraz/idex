@@ -10,7 +10,7 @@ body,html,
   font-size: 16px;
   position: absolute;
   color: #ffffff;
-  background: url("../media/background.jpg")no-repeat 50%/cover;
+  background: url("../images/background.jpg")no-repeat 50%/cover;
   }
 
 /*cf codes*
@@ -87,7 +87,7 @@ body,html,
 }
 
 .logo {
-  background: url('../media/idex.png') no-repeat ;
+  background: url('../images/idex.png') no-repeat ;
   margin:5px;
   float: left;
   width: 150px;
@@ -158,7 +158,7 @@ body,html,
             /*---------- Home Page Container -------------*/
 
 .home-container .button-menu {
-  background: url("../media/arrow_up.png");
+  background: url("../images/arrow_up.png");
   position: absolute;
   padding: 0;
   margin: 0 auto;
@@ -175,7 +175,7 @@ body,html,
 }
 
 .home-container .button-contact {
-    background: url("../media/arrow_down.png");
+    background: url("../images/arrow_down.png");
     position: absolute; /*--changing position "title-position" reletive to absolute and caused these stuff!*/
     padding: 0;
     left: 50%;
@@ -191,7 +191,7 @@ body,html,
 }
 
 .home-container .button-services{
-  background: url("../media/arrow_right.png");
+  background: url("../images/arrow_right.png");
   position: absolute;
   top: 50%;
   right: 20px;
@@ -206,7 +206,7 @@ body,html,
 }
 
 .home-container .button-about-us {
-  background: url("../media/arrow_left.png");
+  background: url("../images/arrow_left.png");
   position: absolute;
   top: 50%;
   left: 20px;
@@ -283,7 +283,7 @@ body,html,
 /*-----------------------------Menu Page-------------------------------------*/
 
 .menu_container{
-  background: url("../media/background.jpg")no-repeat 50%/cover;
+  background: url("../images/background.jpg")no-repeat 50%/cover;
   height:100%;
   width:100%;
   position: absolute;
@@ -320,7 +320,7 @@ body,html,
 }
 
 .menu_container .close{
-  background: url("../media/close.png")no-repeat 50%/cover;
+  background: url("../images/close.png")no-repeat 50%/cover;
   height:20px;
   width:20px;
   position: absolute;
@@ -332,7 +332,7 @@ body,html,
   opacity: 1;
 }
 .menu_container .close:hover{
-  background: url("../media/close_active.png")no-repeat 50%/cover;
+  background: url("../images/close_active.png")no-repeat 50%/cover;
   height:20px;
   width:20px;
   margin-left: 90%;
@@ -423,14 +423,14 @@ body,html,
   height: 22px;
   width: 22px;
   padding: 0;
-  background: url("../media/fb.png") no-repeat 50%/cover;
+  background: url("../images/fb.png") no-repeat 50%/cover;
   display: inline-block;
 }
 #menu .linkedin{
   height: 23px;
   width: 23px;
   padding: 0;
-  background: url("../media/ln.png") no-repeat 50%/cover;
+  background: url("../images/ln.png") no-repeat 50%/cover;
   display: inline-block;
 }
 
@@ -438,7 +438,7 @@ body,html,
   height: 22px;
   width: 22px;
   padding: 0;
-  background: url("../media/tw.png") no-repeat 50%/cover;
+  background: url("../images/tw.png") no-repeat 50%/cover;
   display: inline-block;
 }
 
@@ -532,7 +532,7 @@ body,html,
 }
 
  .back-about{
-   background: url("../media/back_right.png")no-repeat 50%/cover;
+   background: url("../images/back_right.png")no-repeat 50%/cover;
    position: absolute;
    top: 50%;
    right: 40px;
@@ -548,7 +548,7 @@ body,html,
    opacity: 1;
  }
  .back-about:hover{
-   background: url("../media/back_right_h.png")no-repeat 50%/cover;
+   background: url("../images/back_right_h.png")no-repeat 50%/cover;
    color: #252b32;
    display: block;
    -webkit-transition: .2s ease-in-out;
@@ -591,7 +591,7 @@ body,html,
 }
 
   .back-services{
-    background: url("../media/arrow_left.png") no-repeat 50%/cover;
+    background: url("../images/arrow_left.png") no-repeat 50%/cover;
     position: relative;
     display: inline-block;
     left: 20px;
@@ -608,7 +608,7 @@ body,html,
   }
 
   .back-services:hover{
-    background: url("../media/back_left_h.png")no-repeat 50%/cover;
+    background: url("../images/back_left_h.png")no-repeat 50%/cover;
     color: #252b32;
     -webkit-transition: .2s ease-in-out;
     -moz-transition: .2s ease-in-out;
@@ -705,7 +705,7 @@ body,html,
   }
 
    .sd{
-      background:  url("../media/service.jpg") no-repeat 50%/cover;
+      background:  url("../images/service.jpg") no-repeat 50%/cover;
       width: 58%;
       height: 100%;
       margin: 0;
@@ -721,7 +721,7 @@ body,html,
   }
 
    .bv{
-      background: url("../media/python_branding.jpg") no-repeat 50%/cover;
+      background: url("../images/python_branding.jpg") no-repeat 50%/cover;
       width: 40%;
       height: 100%;
       margin: 2px;
@@ -746,7 +746,7 @@ body,html,
   }
 
     .tt{
-      background: url("../media/teaching.jpg")no-repeat 50%/cover;
+      background: url("../images/teaching.jpg")no-repeat 50%/cover;
       width: 37%;
       height: 100%;
       margin: 2px;
@@ -762,7 +762,7 @@ body,html,
     }
 
     .ed{
-      background: url("../media/exhibit.jpg")no-repeat 50%/cover;
+      background: url("../images/exhibit.jpg")no-repeat 50%/cover;
       width: 61%;
       height: 100%;
       margin: 2px;
@@ -787,7 +787,7 @@ body,html,
       }
 
     .rh{
-      background: url("../media/research.jpg")no-repeat 50%/cover;
+      background: url("../images/research.jpg")no-repeat 50%/cover;
       width: 31%;
       height: 100%;
       margin: 2px;
@@ -803,7 +803,7 @@ body,html,
     }
 
     .sp{
-      background: url("../media/PRODUCT.jpg")no-repeat 50%/cover;
+      background: url("../images/PRODUCT.jpg")no-repeat 50%/cover;
       width: 67%;
       height: 100%;
       margin: 2px;
@@ -825,14 +825,14 @@ body,html,
      background: rgba(214,205,205,0.7);
      width: 100%;
      height: 100%;
-     margin: 0 auto;
+     margin: 0;
      padding: 0;
      display: inline-block;
      position: relative;
  }
 
  #pics-gallery button{
-   background: url("../media/close.png")no-repeat 50%/cover;
+   background: url("../images/close.png")no-repeat 50%/cover;
    height:20px;
    width:20px;
    position: absolute;
@@ -843,10 +843,10 @@ body,html,
    pointer-events: auto;
    transition: opacity 0.5s;
    opacity: 1;
-
  }
+
  #pics-gallery button:hover{
-   background: url("../media/close_active.png")no-repeat 50%/cover;
+   background: url("../images/close_active.png")no-repeat 50%/cover;
    height:20px;
    width:20px;
    border: none;
@@ -909,7 +909,7 @@ body,html,
 }
 
 .img-cont .pix .first{
-  background: url("../media/ex-1.jpg")no-repeat 50%/cover;
+  background: url("../images/ex-1.jpg")no-repeat 50%/cover;
   top:0;
   float: left;
   display: inline-flex;
@@ -917,7 +917,7 @@ body,html,
 }
 
 .img-cont .pix .second{
-   background: url("../media/ex-2.jpg")no-repeat 50%/cover;
+   background: url("../images/ex-2.jpg")no-repeat 50%/cover;
    bottom: 0;
    float: left;
    display: inline-flex;
@@ -926,7 +926,7 @@ body,html,
  }
 
  .img-cont .third{
-   background: url("../media/ex-3.jpg")no-repeat 50%/cover;
+   background: url("../images/ex-3.jpg")no-repeat 50%/cover;
    width:53%;
    height: 490px;
    float: right;
@@ -1080,7 +1080,7 @@ body,html,
 /*-------Address+Map------------*/
 
   .add .map{
-    background: url(../media/map.png)no-repeat 50%/cover;
+    background: url(../images/map.png)no-repeat 50%/cover;
     width: 340px;
     height: 222px;
   }
@@ -1196,13 +1196,13 @@ body,html,
   .follow .facebook{
     height: 23px;
     width: 23px;
-    background: url("../media/fb.png") no-repeat 50%/cover;
+    background: url("../images/fb.png") no-repeat 50%/cover;
     display: inline-flex;
     margin-right: 10px;
   }
 
   .follow .facebook:hover{
-    background:url("../media/fb_h.png")50%/cover;
+    background:url("../images/fb_h.png")50%/cover;
     -webkit-transition: .2s ease-in-out;
     -moz-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
@@ -1213,13 +1213,13 @@ body,html,
   .follow .linkedin{
     height: 23px;
     width: 23px;
-    background: url("../media/ln.png") no-repeat 50%/cover;
+    background: url("../images/ln.png") no-repeat 50%/cover;
     display: inline-block;
     margin-right: 10px;
   }
 
   .follow .linkedin:hover{
-  background: url("../media/ln_h.png")no-repeat 50%/cover;
+  background: url("../images/ln_h.png")no-repeat 50%/cover;
   -webkit-transition: .2s ease-in-out;
   -moz-transition: .2s ease-in-out;
   -o-transition: .2s ease-in-out;
@@ -1230,13 +1230,13 @@ body,html,
   .follow .twitter{
     height: 23px;
     width: 23px;
-    background: url("../media/tw.png") no-repeat 50%/cover;
+    background: url("../images/tw.png") no-repeat 50%/cover;
     display: inline-block;
     margin-right: 10px;
   }
 
   .follow .twitter:hover{
-    background: url("../media/tw_h.png")no-repeat 50%/cover;
+    background: url("../images/tw_h.png")no-repeat 50%/cover;
     -webkit-transition: .2s ease-in-out;
     -moz-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
@@ -1337,14 +1337,104 @@ body,html,
 
   /*---Services Gallery---*/
 
-  .one {
-    height: 1000px;
+  #pics-gallery section {
+    width: 100%;
+    height: 1250px;
+    margin:0;
+    position: absolute;
   }
 
-  .img-cont{
-    height: 1000px;
-    background: url("../media/ex-438.jpg")no-repeat 50%/cover;
+  .one {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    margin:0;
+    display: inline-block;
   }
+
+
+  .img-cont{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    display:inline-block;
+    left: -50%;
+    transform: translateX(-50%) translateY(-50%);
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+
+  .img-cont .pix{
+    margin-top: 15px;
+    position: absolute;
+    left: 101%;
+    margin-bottom: 10px;
+    display:inline-block;
+    top:50%;
+  }
+
+
+
+  .img-cont .pix .first{
+    width: 750px;
+    height: 300px;
+    margin:0;
+    margin-bottom: 15px;
+    padding: 0;
+    position: absolute;
+    display: block;
+  }
+
+    .img-cont .pix .second{
+    width: 750px;
+    height: 300px;
+    margin:0;
+    padding: 0;
+    position: absolute;
+    top: 65%;
+  }
+
+
+  .img-cont .third{
+    width: 750px;
+    height: 300px;
+    margin-top: 15px;
+    margin:0;
+    position: absolute;
+    top: 103%;
+    left: 101%;
+
+   }
+
+  .one .content h2{
+    font-size: 1.2;
+    border-bottom: 1px solid #2b3037;
+    width: 370px;
+    padding: 0;
+    padding-bottom: 2px;
+    margin-left: 20px;
+  }
+
+  .one .content h3{
+    margin-top:0;
+    line-height: 1;
+
+   }
+   .one .content p{
+    font-size: 1.1em;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    padding: 0;
+    margin-left: 20px;
+
+   }
+
+  #pics-gallery .head {
+    height: 60px;
+    width: 100%;}
 
 
 
@@ -1374,6 +1464,8 @@ body,html,
     transform: translateX(-50%) translateY(-50%);
     position: absolute;
   }
+
+  /*--footer--*/
 
   #footer{
     margin-top:1000px;
@@ -1505,36 +1597,36 @@ body,html,
 
 
   .mobile-fb{
-    background: url("../media/fb_h.png") no-repeat 50%/cover;
+    background: url("../images/fb_h.png") no-repeat 50%/cover;
     margin: 10px;
     width: 40px;
     height: 40px;
     display: inline-block;
   }
   .mobile-fb:hover{
-    background: url("../media/fb.png") no-repeat 50%/cover;
+    background: url("../images/fb.png") no-repeat 50%/cover;
   }
 
   .mobile-tw{
-    background: url("../media/tw_h.png")no-repeat 50%/cover;
+    background: url("../images/tw_h.png")no-repeat 50%/cover;
     margin: 10px;
     width: 40px;
     height: 40px;
     display: inline-block;
   }
   .mobile-tw:hover{
-    background: url("../media/tw.png")no-repeat 50%/cover;
+    background: url("../images/tw.png")no-repeat 50%/cover;
   }
 
   .mobile-li{
-    background: url("../media/ln_h.png") no-repeat 50%/cover;
+    background: url("../images/ln_h.png") no-repeat 50%/cover;
     margin: 10px;
     width: 40px;
     height: 40px;
     display: inline-block;
   }
   .mobile-li:hover{
-    background: url("../media/ln.png") no-repeat 50%/cover;
+    background: url("../images/ln.png") no-repeat 50%/cover;
   }
   .mobile-email{
     font-size: 1.5em;
@@ -1625,6 +1717,13 @@ body,html,
 
     /*Services Gallery*/
 
+    #pics-gallery section {
+      width: 100%;
+      height: 1250px;
+      margin:0;
+      position: relative;
+      top: 1110;
+    }
 
     /*Contact*/
 
