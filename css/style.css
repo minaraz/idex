@@ -37,12 +37,12 @@ body,html,
   }
 /*working on my different pages*/
   #home{
-    display:block;
+    display:none;
     position: relative;
     top:0;
     }
   #menu{
-    display:block;
+    display:none;
     position: relative;
     top:0;
     }
@@ -57,7 +57,7 @@ body,html,
     position: relative;
   }
   #services{
-    display:none;
+    display:block;
     position: relative;
     top:0;
   }
@@ -74,7 +74,6 @@ body,html,
   #footer{
     display:none;
     position: absolute;
-    bottom:0;
   }
 
 /*-- Header --*/
@@ -597,7 +596,7 @@ body,html,
 
   .back-services{
     background: url("../images/arrow_left.png") no-repeat 50%/cover;
-    position: relative;
+    position: absolute;
     display: inline-block;
     left: 20px;
     margin-top: 21%;
@@ -704,9 +703,10 @@ body,html,
       display: inline-flex;
       margin:20px;
       height: 100%;
-      top: 50px;
+      top: 0;
       padding: 0;
       border-color: #b8adae;
+      position: relative;
   }
 
    .sd{
@@ -785,6 +785,7 @@ body,html,
     .rh, .sp{
       display: inline-flex;
       height: 35%;
+      width: 100%;
       top:0;
       padding: 0;
       border: 2px;
@@ -881,21 +882,22 @@ body,html,
    margin: 0 auto;
  }
 
-  .img-cont{
+  #pics-gallery .img-cont{
      width: 1260px;
      height: 500px;
      margin: 5px;
      padding: 0;
   }
 
- .img-cont .pix{
+#pics-gallery .img-cont .pix{
      width: 46%;
      height: 500px;
      padding: 0;
      position: relative;
  }
 
- .img-cont .pix .first,.second{
+ #pics-gallery .img-cont .pix .first,
+ #pics-gallery .second{
     width: 44%;
     height: 48%;
     margin-left: -33%;
@@ -913,7 +915,7 @@ body,html,
     justify-content: space-between;
 }
 
-.img-cont .pix .first{
+#pics-gallery .img-cont .pix .first{
   background: url("../images/ex-1.jpg")no-repeat 50%/cover;
   top:0;
   float: left;
@@ -921,7 +923,7 @@ body,html,
   text-align: center;
 }
 
-.img-cont .pix .second{
+#pics-gallery .img-cont .pix .second{
    background: url("../images/ex-2.jpg")no-repeat 50%/cover;
    bottom: 0;
    float: left;
@@ -930,7 +932,7 @@ body,html,
    margin-top: 10px;
  }
 
- .img-cont .third{
+ #pics-gallery .img-cont .third{
    background: url("../images/ex-3.jpg")no-repeat 50%/cover;
    width:53%;
    height: 490px;
@@ -1102,7 +1104,7 @@ body,html,
       height: 80px;
       width:100%;
       position:absolute;
-      display: block;
+
     }
 
   .footer-nav{
@@ -1367,7 +1369,7 @@ body,html,
     display: inline-block;
   }
 
-  .img-cont{
+  #pics-gallery .img-cont{
     width: 100%;
     height: 100%;
     margin: 0;
@@ -1379,7 +1381,7 @@ body,html,
     justify-content: space-around;
   }
 
-  .img-cont .pix{
+  #pics-gallery .img-cont .pix{
     margin-top: 15px;
     position: absolute;
     left: 101%;
@@ -1388,7 +1390,7 @@ body,html,
     top:50%;
   }
 
-  .img-cont .pix .first{
+  #pics-gallery .img-cont .pix .first{
     width: 750px;
     height: 300px;
     margin:0;
@@ -1398,7 +1400,7 @@ body,html,
     display: block;
   }
 
-  .img-cont .pix .second{
+  #pics-gallery .img-cont .pix .second{
     width: 750px;
     height: 300px;
     margin:0;
@@ -1408,7 +1410,7 @@ body,html,
   }
 
 
-  .img-cont .third{
+  #pics-gallery .img-cont .third{
     width: 750px;
     height: 300px;
     margin-top: 15px;
@@ -1780,6 +1782,9 @@ body,html,
     /*Services*/
 
 
+.head h3 {
+  font-size: 1.5em;
+}
 
     /*Services Gallery*/
 
