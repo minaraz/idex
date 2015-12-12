@@ -11,6 +11,8 @@ body,html,
   position: absolute;
   color: #ffffff;
   background: url("../images/background.jpg")no-repeat 50%/cover;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
   }
 
 /*cf codes*
@@ -35,12 +37,12 @@ body,html,
   }
 /*working on my different pages*/
   #home{
-    display:none;
+    display:block;
     position: relative;
     top:0;
     }
   #menu{
-    display:none;
+    display:block;
     position: relative;
     top:0;
     }
@@ -70,9 +72,9 @@ body,html,
     bottom: :0;
     }
   #footer{
-    display:block;
-    position: relative;
-    top:0;
+    display:none;
+    position: absolute;
+    bottom:0;
   }
 
 /*-- Header --*/
@@ -1098,7 +1100,6 @@ body,html,
     #footer {
       height: 80px;
       width:100%;
-      margin-top:645px;
       position:absolute;
       display: block;
     }
@@ -1116,10 +1117,9 @@ body,html,
     width: 50%;
     height: 50px;
     display: inline-flex;
-    margin-right: 3%;
-    margin-left: 42%;
+    margin-right: 10%;
+    margin-left: 32%;
     line-height: 5;
-
   }
 
   .copyright a{
@@ -1134,27 +1134,14 @@ body,html,
     text-decoration: none;
   }
 
-  .copyright a:hover{
-    font-size: 1em;
-    font-weight: 100;
-    color: #252b32;
-    -webkit-transition: .2s ease-in-out;
-    -moz-transition: .2s ease-in-out;
-    -o-transition: .2s ease-in-out;
-    transition: .2 ease-in-out;
-    opacity:.8;
-  }
-
   .pages-links{
     width: 30%;
     height: 30px;
     position: absolute;
     display: inline-flex;
-    margin-top:25px;
+    margin-top:30px;
     float: left;
-    margin: 30px;
-    margin-left: 3px;
-
+    margin-left: -4%;
   }
 
   .pages-links a{
@@ -1170,22 +1157,22 @@ body,html,
     padding-left: 15px;
   }
 
-  .pages-links a:hover{
-    color: #2b3037;
-    font-weight: 400;
-    -webkit-transition: .2s ease-in-out;
-    -moz-transition: .2s ease-in-out;
-    -o-transition: .2s ease-in-out;
-    transition: .2 ease-in-out;
-    opacity:.8;
-  }
+    .pages-links a:hover{
+      color: #2b3037;
+      font-weight: 400;
+      -webkit-transition: .2s ease-in-out;
+      -moz-transition: .2s ease-in-out;
+      -o-transition: .2s ease-in-out;
+      transition: .2 ease-in-out;
+      opacity:.8;
+     }
 
-  .pages-links a::after{
-    border-right: 1px solid #5e737f;
-  }
+    .pages-links a::after{
+      border-right: 1px solid #5e737f;
+    }
 
   #footer .follow{
-    width: 15%;
+    width: 16%;
     height: 30px;
     position: relative;
     flex-wrap: wrap;
@@ -1298,7 +1285,6 @@ body,html,
 
   #about-us{}
 
-
   .about_container h2 {
     font-size: 1.4em;
   }
@@ -1327,6 +1313,7 @@ body,html,
         color: #ffffff;
         text-decoration: underline;
      }
+
   .about_container .article p {
     font-size: 1.6em;
   }
@@ -1334,6 +1321,7 @@ body,html,
   #about-us .back-about{
     display: none;
   }
+
   .article{
     float:right;
   }
@@ -1378,7 +1366,6 @@ body,html,
     display: inline-block;
   }
 
-
   .img-cont{
     width: 100%;
     height: 100%;
@@ -1391,7 +1378,6 @@ body,html,
     justify-content: space-around;
   }
 
-
   .img-cont .pix{
     margin-top: 15px;
     position: absolute;
@@ -1400,8 +1386,6 @@ body,html,
     display:inline-block;
     top:50%;
   }
-
-
 
   .img-cont .pix .first{
     width: 750px;
@@ -1413,7 +1397,7 @@ body,html,
     display: block;
   }
 
-    .img-cont .pix .second{
+  .img-cont .pix .second{
     width: 750px;
     height: 300px;
     margin:0;
@@ -1431,7 +1415,6 @@ body,html,
     position: absolute;
     top: 103%;
     left: 101%;
-
    }
 
   .one .content h2{
@@ -1463,8 +1446,8 @@ body,html,
     width: 100%;}
 
 
-
   /*---Contact---*/
+
   #contact .contact-container, .add {
   	width:50%;
     position: relative;
@@ -1494,15 +1477,22 @@ body,html,
   /*--footer--*/
 
   #footer{
-    margin-top:1000px;
+    width: 100%;
     height: 130px;
     font-size: 1.1em;
     position: absolute;
+    bottom:0;
+    margin:0;
+    padding:0;
   }
 
   .footer-nav{
     width: 100%;
-    text-align: left;
+    text-align: center;
+  }
+
+  .pages-links{
+     margin-left: -45%;
   }
 
   .pages-links a{
@@ -1516,7 +1506,13 @@ body,html,
      padding-right: 20px;
      margin-top: 5px;
      margin-left: 7px;
-  }
+     }
+
+    .pages-links a:hover{
+      text-decoration: underline;
+      color:#ffffff;
+      font-weight: 300;
+     }
 
   .copyright{
     width: 100%;
@@ -1525,52 +1521,31 @@ body,html,
     margin-left: 20%;
     margin-right: 0;
     margin-top: 40px;
+    display: inline-flex;
+    margin-top: 50px;
   }
-  .copyright {
-      width: 100%;
-      height: 50px;
-      display: inline-flex;
-      margin-top: 50px;
-    }
 
   #footer .follow{
     height: 60px;
     width: 300px;
     position: absolute;
     margin-top: 33px;
-    margin-left: 70%;
+    margin-left: 65%;
     float: right;
-  }
-  .follow .facebook{
-    height: 30px;
-    width: 30px;
-  }
-  .follow .linkedin{
-    height: 30px;
-    width: 30px;
-  }
-  .follow .twitter{
-    height: 30px;
-    width: 30px;
-  }
+    }
 
-
-  /*---pages-links for smaller screens*width: 30%;
-    .pages-links {height: 30px;
-    position: absolute;
-    display: inline-flex;
-    float: left;
-    margin-left: 3px;}
-
-    .copyright {
-        width: 50%;
-        height: 50px;
-        display: inline-flex;
-        line-height: 5;
-        margin: 0;
-        position: absolute;}
-
-    ------*/
+      .follow .facebook{
+        height: 30px;
+        width: 30px;
+      }
+      .follow .linkedin{
+        height: 30px;
+        width: 30px;
+      }
+      .follow .twitter{
+        height: 30px;
+        width: 30px;
+      }
 
 
 
@@ -1579,14 +1554,19 @@ body,html,
 
   /*---------mobile:iPhone---------*/
 @media (max-width:750px) {
-  body,html,.home-container{
+  body,html{
+    width:100%;
+    height: 1334px;;
+  }
+
+  .home-container{
   width:100%;
-  height: 1300px;
+  height: 100%
   top:0;
   }
 
   #mobile-menu {
-    display:none;
+    display:block;
     top: 0;
     height:100%;
     width:100%;
@@ -1619,8 +1599,8 @@ body,html,
 
   #menu {
     display:none;
-
   }
+
   #mobile-menu {
     width:100%;
     height:300px;
@@ -1647,7 +1627,8 @@ body,html,
     color: #ffffff;
     position: relative;
     margin: 0;
-    margin-bottom: 10px;  }
+    margin-bottom: 10px;
+    }
 
   .mobile-follow{
     width: 100%;
@@ -1669,6 +1650,7 @@ body,html,
     height: 40px;
     display: inline-block;
   }
+
   .mobile-fb:hover{
     background: url("../images/fb.png") no-repeat 50%/cover;
   }
@@ -1680,6 +1662,7 @@ body,html,
     height: 40px;
     display: inline-block;
   }
+
   .mobile-tw:hover{
     background: url("../images/tw.png")no-repeat 50%/cover;
   }
@@ -1691,9 +1674,11 @@ body,html,
     height: 40px;
     display: inline-block;
   }
+
   .mobile-li:hover{
     background: url("../images/ln.png") no-repeat 50%/cover;
   }
+
   .mobile-email{
     font-size: 1.5em;
     color: #ffffff;
@@ -1711,20 +1696,17 @@ body,html,
     -o-transition: .2s ease-in-out;
     transition: .2 ease-in-out;
     opacity:.8
-
   }
+
   .mobile-email:hover{
     color: #2a2f36;
-
   }
-
-
 
   .add p{
     width:80%;
   }
 
-    /*About*/
+  /*---About---*/
 
     #about-us{
     position: absolute;
@@ -1734,8 +1716,8 @@ body,html,
      background-color: #2b3037;
      width: 100%;
      height: 60px;
-
    }
+
    .about_container h2{
      font-size: 1.5em;
      padding-left: 40%;
@@ -1809,23 +1791,61 @@ body,html,
       top: 1110;
     }
 
-    /*Contact*/
+  /*---Contact---*/
 
-  /*Footer*/
+  /*---Footer---*/
 
     #footer{
-      height: 150px;
-
+      width: 100%;
+      height: 200px;
+      position: absolute;
+      bottom: 0;
+      background-color: #2a2f36;
     }
 
+    .pages-links {
+      height: 30px;
+      position: absolute;
+      display: inline-flex;
+      left: 0;
+      float: left;
+      margin-left:11%;
+      }
 
+    .copyright {
+        position: relative;
+        margin-top: 50px;
+        }
+
+        .copyright a{
+        font-size: 1em;
+        font-weight: lighter;
+        letter-spacing: .03em;
+        flex-wrap: wrap;
+        float: left;
+        top: 80%;
+        }
+
+  #footer .follow {
+    position: relative;
+    margin-top: 33px;
+    margin-left: 25%;
+    float: left;
+  }
 
 }
+
+
+
 /*-----smaller sceens---*/
 @media (max-width: 562px){
 
+/*---Homepage----*/
 
 
+/*-----Menu------*/
+
+/*-----About-----*/
 
   .about_container .side-menu a {
       font-size: 1em;
@@ -1843,4 +1863,30 @@ body,html,
   .about_container .article p {
       font-size: 1.3em;
   }
+
+  /*---Services---*/
+
+/*---Services Gallery---*/
+
+
+
+  /*---contact---*/
+
+
+
+  /*---footer---*/
+
+  #footer {
+    width: 100%;
+    height: 130px;
+  }
+
+    .pages-links {
+    margin-left: 5%;
+    }
+#footer .follow{
+  display:none;}
+
+
+
 }
