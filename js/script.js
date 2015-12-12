@@ -6,7 +6,8 @@ var menu = document.getElementById('menu');
 var homePage = document.getElementById('home');
 var aboutButton = document.getElementById('aboutButton');
 var aboutPage = document.getElementById('about-us');
-var servicePage= document.getElementById('services');
+var backAbout = document.getElementById('back-about');
+var servicePage = document.getElementById('services');
 var backServices = document.getElementById('back-services');
 var Gallery = document.getElementById('pics-gallery');
 var Contact = document.getElementById('contact');
@@ -22,7 +23,14 @@ menuButton.onclick = function() {
 aboutButton.onclick = function() {
   homePage.classList.remove('selected');
   menu.classList.remove('selected');
-  aboutPage.class.add('selected')
+  aboutPage.classList.add('selected');
+};
+
+backAbout.onclick = function() {
+  homePage.classList.remove('selected');
+  menu.classList.remove('selected');
+  aboutPage.classList.remove('selectd');
+  homePage.classList.add('selected');
 };
 
 
@@ -31,5 +39,9 @@ aboutButton.onclick = function() {
 var hideMenu = function() {
   menu.classList.remove('selected');
   homePage.classList.add('selected');
+}
 
+var hideaboutPage = function() {
+  aboutPage.classList.remove('selectd');
+  homePage.classList.add('selected');
 }
