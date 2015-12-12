@@ -36,6 +36,7 @@ body,html,
     transition: opacity 0.2s, visibility 0.2s !important;
   }
 /*working on my different pages*/
+
   #home{
     display:none;
     position: relative;
@@ -57,7 +58,7 @@ body,html,
     position: relative;
   }
   #services{
-    display:block;
+    display:none;
     position: relative;
     top:0;
   }
@@ -67,10 +68,11 @@ body,html,
     top:0;
   }
   #contact{
-    display:none;
+    display:block;
     position: relative;
     bottom: :0;
     }
+
   #footer{
     display:none;
     position: absolute;
@@ -992,6 +994,7 @@ body,html,
 	margin 0 auto;
 	background: #ffffff;
   position: absolute;
+
  }
 
 #contact .contact-container, .add {
@@ -1099,7 +1102,7 @@ body,html,
     margin-left: 5%;
   }
 
-    /****--------------------------  Footer  -----------------------------*****/
+/****------------  Footer  --------------*****/
     #footer {
       height: 80px;
       width:100%;
@@ -1348,9 +1351,9 @@ body,html,
     letter-spacing: .12;
   }
 
-.back-services{
-  display: none;
-}
+  .back-services{
+    display: none;
+  }
 
   /*---Services Gallery---*/
 
@@ -1409,7 +1412,6 @@ body,html,
     top: 65%;
   }
 
-
   #pics-gallery .img-cont .third{
     width: 750px;
     height: 300px;
@@ -1432,8 +1434,8 @@ body,html,
   .one .content h3{
     margin-top:0;
     line-height: 1;
-
    }
+
    .one .content p{
     font-size: 1.1em;
     width: 100%;
@@ -1441,30 +1443,41 @@ body,html,
     position: relative;
     padding: 0;
     margin-left: 20px;
-
    }
 
   #pics-gallery .head {
     height: 60px;
-    width: 100%;}
-
+    width: 100%;
+  }
 
   /*---Contact---*/
+  #contact {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
 
   #contact .contact-container, .add {
   	width:50%;
-    position: relative;
+    margin-top: 97%;
   }
 
+  .contact-page{
+    background-color: #2a2f36;
+    width: 100%;
+    height: 150px;
+    top: 0;
+  }
   #contact .add{
     border-right:none;
     border-bottom: 1px solid #605858;
     margin: 0;
     padding-bottom: 50px;
-    top: 30%;
+    top: 16%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     display: inline-block;
+    position: absolute;
   }
 
   #contact .contact-container{
@@ -1549,11 +1562,10 @@ body,html,
         height: 30px;
         width: 30px;
       }
-
 }
 
-
   /*---------mobile:iPhone---------*/
+
 @media (max-width:750px) {
   body,html{
     width:100%;
@@ -1566,15 +1578,6 @@ body,html,
   top:0;
   }
 
-
-  #mobile-menu {
-    display:block;
-    top: 0;
-    height:100%;
-    width:100%;
-    position: relative;
-  }
-
 .button-menu,.button-contact,.button-services,.button-about-us{
     display: none;
   }
@@ -1583,7 +1586,6 @@ body,html,
   top: 22%;
   position: absolute;
   }
-
 
   #header {
     height:200px;
@@ -1614,6 +1616,7 @@ body,html,
     font-weight: 300;
   }
 
+
   .mobile-about,.mobile-services,.mobile-contact{
     background-color: #2a2f36;
     background-size: 30px;
@@ -1643,7 +1646,6 @@ body,html,
     left: 38%;
     margin-top:25px;
   }
-
 
   .mobile-fb{
     background: url("../images/fb_h.png") no-repeat 50%/cover;
@@ -1778,15 +1780,74 @@ body,html,
     border: none;
   }
 
+    /*---Services---*/
 
-    /*Services*/
+    .services_container .gallery {
+      width: 750px;
+      height: 990px;
+      position: absolute;
+      margin-top: 33%;
+      }
 
+    .first, .second, .third{
+      height: 40%;
+      width: 80%;
+      margin: 0;
+      left: 10%;
+      top: 10%;
+      position: relative;
+      }
+      .sd, .bv {
+          height: 65%;
+        }
 
-.head h3 {
-  font-size: 1.5em;
-}
+      .sd{
+         width: 100%;
+         height: 55%;
+        }
 
-    /*Services Gallery*/
+     .bv{
+         width: 100%;
+         height: 55%;
+       }
+
+   .tt, .ed{
+      height: 55%;
+      margin-bottom: 10px;
+    }
+
+    .tt{
+      width: 100%;
+      height: 55%;
+      margin-top: 34px;
+    }
+
+    .ed{
+      width: 100%;
+      height: 55%;
+      margin-top: -10px;
+    }
+
+    .rh, .sp{
+      height: 55%;
+      }
+
+    .rh{
+      width: 100%;
+      height: 55%;
+      margin-top: 12.5%;
+    }
+    .sp{
+      width: 100%;
+      height: 55%;
+      margin-top: -2px;
+    }
+
+    .head h3 {
+      font-size: 1.5em;
+    }
+
+    /*---Services Gallery---*/
 
     #pics-gallery section {
       width: 100%;
@@ -1797,6 +1858,14 @@ body,html,
     }
 
   /*---Contact---*/
+
+  #contact .contact-container {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+  }
 
   /*---Footer---*/
 
@@ -1837,19 +1906,13 @@ body,html,
     margin-left: 25%;
     float: left;
   }
-
 }
-
-
 
 /*-----smaller sceens---*/
 @media (max-width: 562px){
 
 /*---Homepage----*/
-
-
 /*-----Menu------*/
-
 /*-----About-----*/
 
   .about_container .side-menu a {
@@ -1871,14 +1934,16 @@ body,html,
 
   /*---Services---*/
 
+  .services_container .gallery {
+    width: 100%;
+    height: 990px;
+    position: absolute;
+    margin-top: 33%;
+    border:none;
+    }
+
 /*---Services Gallery---*/
-
-
-
   /*---contact---*/
-
-
-
   /*---footer---*/
 
   #footer {
@@ -1891,7 +1956,5 @@ body,html,
     }
 #footer .follow{
   display:none;}
-
-
 
 }
