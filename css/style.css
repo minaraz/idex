@@ -15,7 +15,7 @@ body,html,
   -ms-text-size-adjust: 100%;
   }
 
-/*cf codes*
+
   #home,
   #menu,
   #about-us,
@@ -35,54 +35,9 @@ body,html,
     opacity:1 !important;
     transition: opacity 0.2s, visibility 0.2s !important;
   }
-/*working on my different pages*/
 
-  #home{
-    display:block;
-    position: absolute;
-    order: 2;
-    top:0;
-    }
-  #menu{
-    display:block;
-    position: absolute;
-    top:0;
 
-    }
-  #about-us{
-    display:block;
-    position: absolute;
-    top:0;
-    order: 4;
-  }
-  #mobile-menu{
-    top:0;
-    display:none;
-    position: relative;
-  }
-  #services{
-    display:block;
-    position: absolute;
-    order: 6;
-    top:0;
-  }
-  #pics-gallery{
-    display:block;
-    position: absolute;
-    top:0;
-  }
-  #contact{
-    display:block;
-    position: absolute;
-    order: 8;
-    bottom: :0;
-    }
 
-  #footer{
-    display:block;
-    position: absolute;
-    order: 10;
-  }
 
 /*-- Header --*/
 
