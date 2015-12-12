@@ -1459,7 +1459,6 @@ body,html,
 
   #contact .contact-container, .add {
   	width:50%;
-    margin-top: 97%;
   }
 
   .contact-page{
@@ -1473,7 +1472,7 @@ body,html,
     border-bottom: 1px solid #605858;
     margin: 0;
     padding-bottom: 50px;
-    top: 16%;
+    top: 25%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     display: inline-block;
@@ -1865,6 +1864,10 @@ body,html,
     display: inline-block;
     top: 50%;
     left: 50%;
+  }
+  #contact .add {
+    padding-bottom: 50px;
+    top: 17%;
   }
 
   /*---Footer---*/
