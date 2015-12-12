@@ -96,6 +96,7 @@ body,html,
   height: 58px;
   position: relative;
 }
+
 .header-slogan {
   margin-top: 40px;
   margin-left: 44px;
@@ -157,7 +158,7 @@ body,html,
   }
 
 
-            /*---------- Home Page Container -------------*/
+/*---------- Home Page Container -------------*/
 
 .home-container .button-menu {
   background: url("../images/arrow_up.png");
@@ -178,7 +179,7 @@ body,html,
 
 .home-container .button-contact {
     background: url("../images/arrow_down.png");
-    position: absolute; /*--changing position "title-position" reletive to absolute and caused these stuff!*/
+    position: absolute;
     padding: 0;
     left: 50%;
     bottom: 10%;
@@ -255,7 +256,7 @@ body,html,
   right: 70px;
 }
 
-   /*-------- Design_Quote /in Main Page ------------*/
+/*-------- Quote /in Main Page ------------*/
 .home-container .home-title {
     font-family: 'Merriweather', serif;
     position:absolute;
@@ -1547,8 +1548,6 @@ body,html,
         width: 30px;
       }
 
-
-
 }
 
 
@@ -1565,6 +1564,7 @@ body,html,
   top:0;
   }
 
+
   #mobile-menu {
     display:block;
     top: 0;
@@ -1572,14 +1572,15 @@ body,html,
     width:100%;
     position: relative;
   }
-  .home-container .button-menu,.button-contact,.button-services,.button-about-us{
+
+.button-menu,.button-contact,.button-services,.button-about-us{
     display: none;
   }
-  .home-container .home-title{
-    top: 0;
-    margin: 25%auto;
-  }
 
+  .home-container .home-title{
+  top: 22%;
+  position: absolute;
+  }
 
 
   #header {
@@ -1604,7 +1605,6 @@ body,html,
   #mobile-menu {
     width:100%;
     height:300px;
-    z-index:2000;
     position:absolute;
     top:50%;
     right:0;
