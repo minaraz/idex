@@ -18,7 +18,6 @@ body,html,
 
   #home,
   #menu,
-  #mobile-menu,
   #about-us,
   #services,
   #pics-gallery,
@@ -1213,7 +1212,9 @@ body,html,
 @media (max-width:768px){
 
   html,.home-container {
-    height: 1024px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
   }
 
   /*---Homepage----*/
@@ -1242,6 +1243,14 @@ body,html,
   float:left;
   }
 
+  #menu .menu-right section {
+    float: left;
+    margin-left: 10%;
+}
+#menu .menu-left section {
+    margin-left: 11%;
+    }
+
   .menu_container section a{
     margin: 0 2%;
   }
@@ -1252,7 +1261,9 @@ body,html,
 
   /*---About---*/
 
-  #about-us{}
+  #about-us{
+    height: 100%;
+  }
 
   .about_container h2 {
     font-size: 1.4em;
@@ -1322,7 +1333,7 @@ body,html,
 
   #pics-gallery section {
     width: 100%;
-    height: 1250px;
+    height: 100%;
     margin:0;
     position: absolute;
   }
@@ -1430,6 +1441,7 @@ body,html,
     height: 150px;
     top: 0;
   }
+
   #contact .add{
     border-right:none;
     border-bottom: 1px solid #605858;
@@ -1446,7 +1458,7 @@ body,html,
     margin: 0;
     padding: 0;
     display: inline-block;
-    top: 75%;
+    top: 70%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     position: absolute;
@@ -1462,6 +1474,7 @@ body,html,
     bottom:0;
     margin:0;
     padding:0;
+    margin-top: 1024px;
   }
 
   .footer-nav{
@@ -1471,7 +1484,7 @@ body,html,
   }
 
   .pages-links{
-     margin-left: -45%;
+     margin-left: 0;
   }
 
   .pages-links a{
@@ -1508,8 +1521,8 @@ body,html,
     height: 60px;
     width: 300px;
     position: absolute;
-    margin-top: 33px;
-    margin-left: 65%;
+    margin-top: 12px;
+    margin-left: -39%;
     float: right;
     }
 
@@ -1530,15 +1543,54 @@ body,html,
   /*---------mobile:iPhone---------*/
 
 @media (max-width:750px) {
+  #home,
+  #about-us,
+  #services,
+  #contact,
+  #footer{
+    visibility:visible;
+    display:block;
+    opacity:1;
+    position: relative;
+  }
+
   body,html{
     width:100%;
-    height: 1334px;;
+    height: 1334px;
+    top:0;
   }
+
+  #home{
+    top:0;
+    position: relative;
+    z-index: 998;
+  }
+  #header{
+    top:0;
+    position: absolute;
+    z-index: 999;
+  }
+
+.logo {
+  background: url('../images/idex-l2.png') no-repeat 20%/cover;
+  margin:5px;
+  float: left;
+  width: 200px;
+  height: 77px;
+  position: relative;
+}
+.header-slogan {
+  margin-top: 53px;
+  margin-left: 27px;
+  font-size: 1.1em;
+  width: 200px;
+}
 
   .home-container{
   width:100%;
   height: 100%
   top:0;
+  position: absolute;
   }
 
 .button-menu,.button-contact,.button-services,.button-about-us{
@@ -1546,7 +1598,7 @@ body,html,
   }
 
   .home-container .home-title{
-  top: 22%;
+  top: 44%;
   position: absolute;
   }
 
@@ -1577,6 +1629,7 @@ body,html,
     right:0;
     font-family: 'Merriweather', serif;
     font-weight: 300;
+    display:block;
   }
 
 
