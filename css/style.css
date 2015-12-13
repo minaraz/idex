@@ -18,6 +18,7 @@ body,html,
 
   #home,
   #menu,
+  #mobile-menu,
   #about-us,
   #services,
   #pics-gallery,
@@ -26,7 +27,6 @@ body,html,
     visibility:hidden;
     opacity: 0;
     top: 77px;
-    position: absolute;
     transition: opacity 0.2s, visibility 0.2s;
   }
 
@@ -202,7 +202,7 @@ body,html,
 
 .button-contact p{
   margin:0;
-  margin-left: -12px;
+  margin-left: -15px;
   bottom: 25px;
 }
 
@@ -215,7 +215,7 @@ body,html,
 .button-services p{
   margin: 0;
   top: 0;
-  right: 70px;
+  right: 80px;
 }
 
 /*-------- Quote /in Main Page ------------*/
@@ -1067,8 +1067,8 @@ body,html,
     #footer {
       height: 80px;
       width:100%;
-      position:absolute;
-
+      position: relative;
+      bottom: 0;
     }
 
   .footer-nav{
@@ -1085,7 +1085,7 @@ body,html,
     height: 50px;
     display: inline-flex;
     margin-right: 10%;
-    margin-left: 32%;
+    margin-left: 40%;
     line-height: 5;
   }
 
@@ -1108,7 +1108,7 @@ body,html,
     display: inline-flex;
     margin-top:30px;
     float: left;
-    margin-left: -4%;
+    margin-left: 0;
   }
 
   .pages-links a{
@@ -1139,13 +1139,13 @@ body,html,
     }
 
   #footer .follow{
-    width: 16%;
+    width: 25%;
     height: 30px;
     position: relative;
     flex-wrap: wrap;
     float: right;
-    padding: 0;
-    margin: -24px;
+    padding: 19px;
+    margin: 0px;
     margin-right: 5px;
   }
 
