@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>IDEX Design Studio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_m.css">
     <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,100' rel='stylesheet' type='text/css'>
   </head>
@@ -121,7 +122,7 @@
     <div id="services" class="services_container">
       <div class="gallery">
         <div class="first">
-         <div class="sd" href="#">
+         <div id="SD" class="sd" href="#">
           <div class="head">
            <h3 href="#">Service Design</h3>
           </div>
@@ -164,7 +165,7 @@
 
     <div id="pics-gallery" class="pics">
       <div class="head">
-        <button onClick="hideGallery()" class="close"></button>
+        <button id="closeGallery" onClick="hideGallery()" class="close"></button>
         <h3>Spatial | Products Design</h3>
       </div>
       <section>
@@ -186,7 +187,7 @@
     </div>
 
     <div id="contact">
-      <section id="contact">
+      <section>
         <div class="add">
           <div class="map"></div>
           <p>Adrress: #5, Golzar alley, Javanshir st. Hossein abad sq. Pasdaran, Tehran , Iran<br>
@@ -206,10 +207,10 @@
 
     <div id="footer" class="footer-nav">
           <div class="pages-links">
-             <a href="#">Home</a>
-             <a href="#">About</a>
-             <a href="#">Services</a>
-             <a href="#">Contact</a>
+             <a id="homeBtn" href="#">Home</a>
+             <a id="aboutBtn" href="#">About</a>
+             <a id="serviceBtn" href="#">Services</a>
+             <a id="contactBtn" href="#">Contact</a>
            </div>
            <div class="copyright">
              <a href="#">&copy; 2015 IDEX Design Studio. All rights reserved.</a>
@@ -221,7 +222,6 @@
           </div>
 
     </div>
-   <div class="shown"></div>
    <script src="js/script.js"></script>
   </body>
 </html>
