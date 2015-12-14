@@ -36,7 +36,9 @@ serviceGallery.onclick = function() {
 
 closeGallery.onclick = function() {
   Gallery.classList.remove('selected');
-  servicePage.classList.add('selected');}
+  servicePage.classList.add('selected');
+  footer.classList.add('selected');
+  }
 
 homelink.onclick = function() {
   Contact.classList.remove('selected');
@@ -75,6 +77,7 @@ servicesButton.onclick = function() {
 
 backServices.onclick = function() {
   services.classList.remove('selected');
+  footer.classList.remove('selected');
   homePage.classList.add('selected');
   mobileMenu.classList.add('selected');
 }
@@ -90,10 +93,12 @@ aboutButton.onclick = function() {
   homePage.classList.remove('selected');
   mobileMenu.classList.remove('selected');
   aboutPage.classList.add('selected');
+  footer.classList.add('selected');
 };
 
 backAbout.onclick = function() {
   aboutPage.classList.remove('selected');
+  footer.classList.remove('selected');
   homePage.classList.add('selected');
   mobileMenu.classList.add('selected');
 };
