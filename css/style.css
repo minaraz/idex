@@ -36,8 +36,6 @@ body,html,
   }
 
 
-
-
 /*-- Header --*/
 
  .header {
@@ -545,12 +543,19 @@ body,html,
 
 
     /*-------------------- Services Page  -----------------------------------*/
+#mobile-services{
+  display:none;
+}
+#services{
+  position: relative;
+  top: 0;
+}
 
 #services .services_container{
   height: 100%;
   width: 100%;
   margin: 0;
-  position: absolute;
+  position: relative;
   padding: 0;
   display: block;
   top: 0;
@@ -595,12 +600,11 @@ body,html,
 
 
  .services_container .gallery{
-     height: 560px;
+     height: 530px;
      width: 930px;
      background-color: rgba(214,205,205,0.3);
      margin: 0;
-     margin-top: 22%;
-     margin-bottom: 20px;
+     margin-top: 21%;
      font-family: 'Merriweather', serif;
      position: absolute;
      padding:0;
@@ -647,7 +651,6 @@ body,html,
   padding-bottom: 2px;
   line-height: 1.1;
   }
-
 
   .first, .second, .third{
     height: 33%;
@@ -787,7 +790,7 @@ body,html,
     }
 
 
-/*---------------------- Services Gallery Page_inside --------------------------*/
+/*--------------------- Gallery --------------------------*/
 
  #pics-gallery section {
      background: rgba(214,205,205,0.7);
@@ -836,6 +839,7 @@ body,html,
      float: left;
      display: inline-block;
  }
+
  .one .content{
    width: 95%;
    height: 95%;
@@ -1068,7 +1072,6 @@ body,html,
     #footer {
       height: 80px;
       width:100%;
-      position: relative;
       bottom: 0;
     }
 
@@ -1308,6 +1311,11 @@ body,html,
 
   /*---Services---*/
 
+  #services{
+    top: 0;
+
+  }
+
    .services_container .gallery{
    width: 700px;
    height: 900px;
@@ -1336,6 +1344,9 @@ body,html,
     height: 100%;
     margin:0;
     position: absolute;
+  }
+  #pics-gallery button{
+    margin-top: 17px;
   }
 
   .one {
@@ -1387,13 +1398,7 @@ body,html,
   }
 
   #pics-gallery .img-cont .third{
-    width: 750px;
-    height: 300px;
-    margin-top: 15px;
-    margin:0;
-    position: absolute;
-    top: 103%;
-    left: 101%;
+    display: none;
    }
 
   .one .content h2{
@@ -1435,19 +1440,12 @@ body,html,
   	width:50%;
   }
 
-  .contact-page{
-    background-color: #2a2f36;
-    width: 100%;
-    height: 150px;
-    top: 0;
-  }
-
   #contact .add{
     border-right:none;
     border-bottom: 1px solid #605858;
     margin: 0;
     padding-bottom: 50px;
-    top: 25%;
+    top: 36%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     display: inline-block;
@@ -1458,11 +1456,14 @@ body,html,
     margin: 0;
     padding: 0;
     display: inline-block;
-    top: 70%;
+    top: 110%;;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     position: absolute;
   }
+
+
+
 
   /*--footer--*/
 
@@ -1544,6 +1545,7 @@ body,html,
 
 @media (max-width:750px) {
   #home,
+  #mobile-menu,
   #about-us,
   #services,
   #contact,
@@ -1552,6 +1554,19 @@ body,html,
     display:block;
     opacity:1;
     position: relative;
+    top:0;
+  }
+
+  #mobile-menu {
+    width:100%;
+    height:300px;
+    position:absolute;
+    top:50%;
+    right:0;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    display:block;
+    z-index: 999;
   }
 
   body,html{
@@ -1563,12 +1578,13 @@ body,html,
   #home{
     top:0;
     position: relative;
-    z-index: 998;
+    z-index: 997;
   }
+
   #header{
     top:0;
     position: absolute;
-    z-index: 999;
+    z-index: 998;
   }
 
 .logo {
@@ -1598,7 +1614,7 @@ body,html,
   }
 
   .home-container .home-title{
-  top: 44%;
+  top: 33%;
   position: absolute;
   }
 
@@ -1621,18 +1637,7 @@ body,html,
     display:none;
   }
 
-  #mobile-menu {
-    width:100%;
-    height:300px;
-    position:absolute;
-    top:50%;
-    right:0;
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
-    display:block;
-  }
-
-
+/*mobile menu*/
   .mobile-about,.mobile-services,.mobile-contact{
     background-color: #2a2f36;
     background-size: 30px;
@@ -1729,7 +1734,6 @@ body,html,
   /*---About---*/
 
     #about-us{
-    position: absolute;
     }
 
    .about_container .about-head{
@@ -1797,12 +1801,38 @@ body,html,
   }
 
     /*---Services---*/
+  #services{
+    position: relative;
+    margin-top: 50%;
 
-    .services_container .gallery {
+  }
+  #mobile-services{
+    display: block
+  }
+  .services-head{
+    background-color: #2b3037;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    margin-top: 180%;
+    z-index: 999;
+  }
+  .services-head h2 {
+    font-family: "Merriweather", serif;
+    font-size: 1.5em;
+    padding-left: 40%;
+    color: #ffffff;
+    margin-top: 0;
+    padding-top: 2%;
+}
+
+ .services_container .gallery {
       width: 750px;
       height: 990px;
-      position: absolute;
-      margin-top: 33%;
+      position: relative;
+      background-color: #ffffff;
+      border: none;
+      margin-top: 45%;
       }
 
     .first, .second, .third{
@@ -1813,6 +1843,7 @@ body,html,
       top: 10%;
       position: relative;
       }
+
       .sd, .bv {
           height: 65%;
         }
@@ -1864,6 +1895,17 @@ body,html,
     }
 
     /*---Services Gallery---*/
+
+    #pics-gallery {
+      width: 100%;
+      height: 100%;
+      top: 333%;;
+      position: absolute;
+    }
+
+    #pics-gallery button{
+      margin-top: 18px;
+    }
 
     #pics-gallery section {
       width: 100%;
@@ -1929,6 +1971,9 @@ body,html,
     margin-left: 25%;
     float: left;
   }
+
+
+
 }
 
 /*-----smaller sceens---*/
