@@ -10,7 +10,7 @@ body,html,
   font-size: 16px;
   position: absolute;
   color: #ffffff;
-  background: url("../images/background.jpg")no-repeat 50%/cover;
+
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   }
@@ -118,7 +118,9 @@ body,html,
 
 
 /*---------- Home Page Container -------------*/
-
+.home-container{
+  background: url("../images/background.jpg")no-repeat 50%/cover;
+}
 .home-container .button-menu {
   background: url("../images/arrow_up.png");
   position: absolute;
@@ -562,7 +564,7 @@ body,html,
 }
 
   .back-services{
-    background: url("../images/arrow_left.png") no-repeat 50%/cover;
+    background: url("../images/back_left.png") no-repeat 50%/cover;
     position: absolute;
     display: inline-block;
     left: 20px;
@@ -589,6 +591,7 @@ body,html,
   }
 
   .back-services p{
+    color: #5f5757;
     margin: 0;
     top: 0;
     right: 20px;
@@ -596,6 +599,9 @@ body,html,
     font-size: 1.5em;
     text-decoration: none;
     letter-spacing: 0.1em;
+  }
+  .back-services p:hover{
+    color: #252b32;
   }
 
 
@@ -1074,6 +1080,7 @@ body,html,
       height: 80px;
       width:100%;
       bottom: 0;
+      position: relative;
     }
 
   .footer-nav{
