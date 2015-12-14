@@ -3,7 +3,6 @@
 //this will show the menu//
 var menuButton = document.getElementById('menuButton');
 var menu = document.getElementById('menu');
-var mobileMenu = document.getElementById('mobile-menu');
 var homePage = document.getElementById('home');
 var aboutButton = document.getElementById('aboutButton');
 var aboutPage = document.getElementById('about-us');
@@ -21,6 +20,15 @@ var contactlink = document.getElementById('contactBtn');
 var serviceGallery = document.getElementById('SD');
 var Gallery = document.getElementById('pics-gallery');
 var closeGallery = document.getElementById('closeGallery');
+var mobileMenu = document.getElementById('mobile-menu');
+var mobileAbout = document.getElementById('mobile-about');
+var mobileServices = document.getElementById('mobile-services');
+var mobileContact = document.getElementById('mobile-contact');
+
+
+mobileAbout.onclick = function() {
+  mobileMenu.classList.remove('selected');
+  aboutPage.classList.add('selected');}
 
 serviceGallery.onclick = function() {
   servicePage.classList.remove('selected');
